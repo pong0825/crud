@@ -9,9 +9,9 @@ class StudentController extends Controller
 {
     public function index()
     {
-        $students = Student::latest()->paginate(5);
+        $students = Student::latest()->paginate(3);
         return view('students.index',compact('students'))
-        ->with('i',(request()->input('page',1)-1)*5);
+        ->with('i',(request()->input('page',1)-1)*3);
     }
 
     public function create()

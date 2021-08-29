@@ -1,0 +1,14 @@
+.con-in {
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.crud-title {
+    text-align: center;
+}
+
+.btn-stud {
+    float: right;
+}
+
