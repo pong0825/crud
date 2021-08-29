@@ -1,14 +1,16 @@
 @extends('students.layout')
 
 @section('content')
-<div class="container con-in">
+
+<section class="sec">
+<div class="container con">
     <div class="pull-left">
         <h2 class="crud-title">Student Information System</h2>
     </div>
 
 
     <div class="pull-right btn-stud">
-        <a class="btn btn-success" href="{{ route('students.create') }}">Add Student</a>
+        <a class="btn-add" href="{{ route('students.create') }}">Add Student</a>
     </div>
 
     @if($message = Session::get('success'))
@@ -37,12 +39,12 @@
             <td>{{$student->phone}}</td>
             <td> 
                 <form action="{{ route('students.destroy',$student->id) }}" method="POST">
-                    <a class="btn btn-primary" href="{{ route('students.edit',$student->id) }}">Edit</a>
-
+                    <a class="btn-view" href="{{ route('students.show',$student->id) }}">View</a>
+                    <a class="btn-edit" href="{{ route('students.edit',$student->id) }}">Edit</a>
                     @csrf
                     @method('DELETE')
                     
-                    <button type="submit" class="btn btn-danger">Delete</button>
+                    <button type="submit" onclick="return confirm('Are you sure you want to delete it?')" class="btn btn-danger btn-del">Delete</button>
                 </form>
             </td>
         </tr>
@@ -51,4 +53,5 @@
         <div class="pagination-block">
             {{ $students->links('students.paginationlinks') }}
         </div>
-</div>
+    </div>
+</section>

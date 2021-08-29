@@ -1,0 +1,116 @@
+body {
+    background-color: #ebc8b2;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.sec {
+    align-items: center;
+    justify-content: center; 
+    display: flex;
+}
+
+.con {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+    padding-top: 20px;
+    background-color: white;
+}
+
+.crud-title {
+    text-align: center;
+}
+
+.btn-stud {
+    float: right;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    background: #1E90FF;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+
+}
+
+.btn-stud:hover, .btn-stud:focus, .btn-stud:active {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.btn-view, .btn-edit {
+    background-color: #1E90FF;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.btn-view, .btn-edit, .btn-del {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn-del:hover {
+    color: red;
+}
+
+.pagination-block {
+    float: right;
+}
+
+.sec-create {
+    display: inline-block;
+    align-items: center;
+    justify-content: center; 
+}
+
+.con-create {
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    padding-top: 20px;
+    background-color: white;
+}
+
+.box {
+    text-align: center;
+}
+
+.btn-submit {
+    margin: 10px;
+    padding: 22px;
+    background: #44ff1e;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.btn-return {
+    margin: 10px;
+    padding: 23px;
+    background: #1E90FF;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+

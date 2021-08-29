@@ -1,20 +1,11 @@
 @extends('students.layout')
 
 @section('content')
-
-<div class="row">
-    <div class="col-lg-12 margin-tb">
-
+<section class="sec sec-create">
+    <div class="container con con-create">
         <div class="pull-left">
-            <h2>Add New Student</h2>
+            <h2 style="text-align: center;">Create Student Information</h2>
         </div>
-
-        <div class="pull-right">
-            <a class="btn btn-primary" href="{{ route('students.index') }}">Back</a>
-        </div>
-    </div>
-</div>
-
 @if ($errors->any())
 
     <div class="alert alert-danger">
@@ -36,7 +27,7 @@
 
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>StudentName:</strong>
+                <strong>Student Name:</strong>
                 <input type="text" name="name" class="form-control" placeholder="name" autocomplete="off">
             </div>
         </div>
@@ -62,10 +53,12 @@
             </div>
         </div>
 
-        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-            <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="box">
+                <a class="btn-return" href="{{ route('students.index') }}">Return</a>
+                <button type="submit" class="btn-submit">Submit</button>
         </div>
     </div>
 </form>
-
+</div>
+</section>
 @endsection
