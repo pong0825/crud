@@ -12,7 +12,6 @@
     @csrf
     @method('PUT')
 
-    <div class="row">
 
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
@@ -42,11 +41,11 @@
             </div>
         </div>
 
-        <div class="pull-right">
-            <a class="btn-return" href="{{ route('students.index') }}">Return</a>
+        <div class="box">
+            <a class="btn-return btn-rtn" href="{{ route('students.index') }}">Return</a>
         </div>
         
-    </div>
+
 </form>
 </div>
 </section>
